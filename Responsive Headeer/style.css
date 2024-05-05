@@ -12,6 +12,36 @@ justify-content: space-between;
 background-color: rgb(29, 28, 28);
 height: 4rem;
 width: 100%;
+color: white;
  }
 
- 
+ .navLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+ }
+   .logo{
+    height: 2.8rem;
+    width:2.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;  
+    margin-left: 0.5rem;
+ }
+ .logo img{
+    height: 3rem;
+    width:3rem;
+    
+ }
+.navList ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.
