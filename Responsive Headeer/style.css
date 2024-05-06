@@ -80,9 +80,7 @@
 }
 
 
-/* .mainList:hover .product{
-    display: flex;
-} */
+
 .product {
   width: auto;
   height: auto;
@@ -91,7 +89,7 @@
   position: absolute;
   left: 0;
   top: 2rem;
-  display: flex;
+  display: none;
   border-radius: 0.5rem;
   animation: 0.5s linear ease-in-out;
 }
@@ -109,7 +107,14 @@
     padding: 0rem 2rem  0rem  1rem;
     font-size: 1.1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
 
+}
+.iList{
+    color: rgb(135, 49, 132);
 }
 .product ul li p{
     font-size: 0.8rem;
@@ -119,3 +124,6 @@
     color: rgb(96, 96, 191);
 
 }
+.mainList:hover .product{
+    display: flex;
+} 
