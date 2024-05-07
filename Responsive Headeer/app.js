@@ -14,4 +14,4 @@ buttonOff.addEventListener("click", () => {
   buttonOff.style.opacity="0";
 });
 
-console.log("hello");
+  buttonOff.style.opacity = "0";
