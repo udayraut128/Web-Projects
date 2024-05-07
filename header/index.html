@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Class with JavaScript</title>
+</head>
+<body>
+
+<div class="hello" id="myDiv">This is a div element.</div>
+
+<div>
+    <button onclick="addClass()">Add Class</button>
+</div>
+
+<script>
+function addClass() {
+    var element = document.getElementById("myDiv");
+    element.classList.add("newClass");
+    element.classList.add("newClass3");
+
+}
+</script>
+
+</body>
+</html>

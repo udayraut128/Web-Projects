@@ -18,8 +18,13 @@
     <header class="header">
       <div class="navLeft">
         <div class="logo"><img src="github.png" alt="abc" /></div>
-        <nav class="navList">
-          <ul class="mainList">
+         <div class="menuIcon" id="menu">
+            <button class="resButton1"> <i class="fa-solid fa-bars" id="resButtonA"></i></button>
+            <button class="resButtton2"><i class="fa-solid fa-xmark" id="resButtonB"></i></button>
+      </div>
+        <nav class="navList"  id="myDiv">
+            
+          <ul class="mainList" >
             <li class="productL">
               <button >Product <i class="fa-solid fa-angle-down" ></i></button>
               <div class="product sameForList">
@@ -89,9 +94,24 @@
         <a href=""><button class="button1">Sign in</button></a>
         <a href=""><button class="button2">Sign up</button></a>
       </div>
-      <div class="menuIcon" id="menu">
-<i class="fa-solid fa-bars"></i>
-      </div>
+     
     </header>
+
+    
+    <script src="app.js"></script>
+    
+ 
+
+ 
+
+<!-- <>
+<!-- function addClass() {
+    var element = document.getElementById("myDiv");
+    element.classList.add("resClass");
+    element.classList.remove("navList");
+    
+
+} -->
+
   </body>
 </html>

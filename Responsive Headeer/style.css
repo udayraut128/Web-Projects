@@ -49,7 +49,7 @@
   width: 100%;
   height: 100%;
 }
-.navList button {
+.navList,.resClass button {
   background-color: transparent;
   border: none;
   color: white;
@@ -201,6 +201,7 @@
         display: none;
     }
     .header{
+      z-index: 1;
         display: flex;
         justify-content: center;
         
@@ -217,4 +218,45 @@
         font-size: 1.5rem;
 
     }
+    
+}
+
+.resClass{
+  position: absolute;
+  display: flex;
+  width: 50vw;
+  height: 100vh;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  z-index: 5;
+   background-color: grey;
+  
+}
+
+.resClass ul{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 3rem;
+  position: absolute;
+  list-style: none;
+ 
+  align-items: center;
+  margin-top: 3rem;
+}
+
+
+.resButton1{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+.resButtton2{
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.6rem;
 }
