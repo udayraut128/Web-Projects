@@ -230,7 +230,7 @@
   right: 0;
   top: 0;
   z-index: 5;
-   background-color: grey;
+   background-color: rgb(226, 213, 213);
   
 }
 
@@ -254,9 +254,9 @@
   font-size: 1.6rem;
 }
 .resButtton2{
-  display: none;
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 1.6rem;
+  z-index: 200;
 }

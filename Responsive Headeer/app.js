@@ -5,7 +5,13 @@ var element = document.getElementById("myDiv");
 buttonOn.addEventListener("click",()=>{
 element.classList.add("resClass");
 element.classList.remove("navList");
-// window.location.reload();
+buttonOff.style.opacity="1";
+});
+
+buttonOff.addEventListener("click", () => {
+  element.classList.add("navList");
+  element.classList.remove("resClass");
+  buttonOff.style.opacity="0";
 });
 
 console.log("hello");
