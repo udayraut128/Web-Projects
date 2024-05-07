@@ -172,6 +172,7 @@
 }
 .sourcesL:hover .sources{
     display: flex;
+    
 }
 
 @keyframes fadeIn{
@@ -185,5 +186,35 @@
         opacity: 1;
         transform: scale(1)
         translateY(0);
+    }
+}
+.menuIcon{
+    display: none;
+}
+
+@media (max-width:800px) {
+    
+    .header  .navList{
+        display: none;
+    }
+   .button1{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .button2{
+        position: absolute;
+        left: 0;
+        top: 1rem;
+    }
+    .menuIcon{
+        display: flex;
+        position: absolute;
+        right: 1.3rem;
+        font-size: 1.5rem;
+
     }
 }
