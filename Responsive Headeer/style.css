@@ -223,8 +223,8 @@
    
 
   }
-  .productL button{
-  animation: 2s ease-in-out;
+  .productL button:hover{
+    animation: anim 3s ease-in-out;
   }
 
   .sameForList ul {
@@ -284,11 +284,12 @@
 
 @keyframes anim {
   from {
-
-    
+ 
+    transform: translateX(0rem);
+    transform-origin: left;
   }
   to {
-    opacity: 1;
-    transform: scale(1) translateY(0);
+     
+    transform: translateX(-5rem);
   }
 }
