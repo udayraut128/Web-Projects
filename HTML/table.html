@@ -3,42 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Table</title>
+    <title>Table Tag Example</title>
 </head>
 <body>
-    <h2>Time Table</h2>
+
+    <h1>Demonstration of Table Tag & Attributes</h1>
+
+    <!-- Basic Table -->
+    <h2>Basic Table</h2>
     <table border="1">
         <tr>
-            <th>Time</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
+            <th>Header 1</th>
+            <th>Header 2</th>
         </tr>
         <tr>
-            <td>Science</td>
-            <td>Π</td>
-            <td>Maths</td>
-            <td>Science</td>
-            <td>Maths</td>
-            <td>Arts</td>
-        </tr>
-        <tr>
-            <td>Hours</td>
-            <td>Π</td>
-            <td>S</td>
-            <td>Social</td>
-            <td>History</td>
-            <td>English</td>
-        </tr>
-        <tr>
-            <td>Social</td>
-            <td>History</td>
-            <td>English</td>
-            <td>Social</td>
-            <td>Project</td>
+            <td>Data 1</td>
+            <td>Data 2</td>
         </tr>
     </table>
+
+    <!-- Table with Attributes -->
+    <h2>Table with Attributes</h2>
+    <table border="2" width="60%" cellpadding="10" cellspacing="5" bgcolor="#f0f0f0">
+        <caption><b>Student Marks Table</b></caption>
+        <tr bgcolor="#d3d3d3">
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <tr align="center">
+            <td>Alice</td>
+            <td>85</td>
+            <td>90</td>
+        </tr>
+        <tr align="center">
+            <td>Bob</td>
+            <td>78</td>
+            <td>88</td>
+        </tr>
+    </table>
+
+    <!-- Merging Rows and Columns -->
+    <h2>Table with Rowspan & Colspan</h2>
+    <table border="2" width="50%">
+        <tr>
+            <th colspan="2">Merged Header</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Rowspan Cell</td>
+            <td>Normal Cell</td>
+        </tr>
+        <tr>
+            <td>Another Cell</td>
+        </tr>
+    </table>
+
 </body>
 </html>
+
