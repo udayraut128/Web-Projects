@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lists in HTML</title>
+    <title>HTML List Tags and Attributes</title>
 </head>
 <body>
-    <h1>Types of Lists</h1>
-    
-    <h2>Ordered List</h2>
-    <ol>
+
+    <h1>HTML List Tags and Attributes</h1>
+
+    <!-- Ordered List with attributes -->
+    <h2>Ordered List (`&lt;ol&gt;`)</h2>
+    <ol type="A" start="3" reversed>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li value="10">Item Three (Starts from 10)</li>
+    </ol>
+
+    <!-- Unordered List with attributes -->
+    <h2>Unordered List (`&lt;ul&gt;`)</h2>
+    <ul type="square">
         <li>Apple</li>
         <li>Banana</li>
         <li>Cherry</li>
-    </ol>
-
-    <h2>Unordered List</h2>
-    <ul>
-        <li>Car</li>
-        <li>Bike</li>
-        <li>Bus</li>
     </ul>
 
-    <h2>Definition List</h2>
+    <!-- Definition List -->
+    <h2>Definition List (`&lt;dl&gt;`)</h2>
     <dl>
         <dt>HTML</dt>
         <dd>HyperText Markup Language</dd>
+
         <dt>CSS</dt>
         <dd>Cascading Style Sheets</dd>
     </dl>
+
 </body>
 </html>
