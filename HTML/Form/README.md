@@ -1,4 +1,20 @@
+
 # HTML Form Tags & Attributes
+
+## Table of Contents
+1. [Introduction to `<form>` Tag](#1-form-form-tag)
+2. [Common `<input>` Types and Attributes](#2-input-input-tag)
+3. [`<label>` - Label for Input](#3-label-label-for-input)
+4. [`<textarea>` - Multi-line Input](#4-textarea-multi-line-input)
+5. [`<select>` & `<option>` - Dropdown Menu](#5-select-option-dropdown-menu)
+6. [`<fieldset>` & `<legend>` - Grouping Form Elements](#6-fieldset-legend-grouping-form-elements)
+7. [`<button>` - Custom Buttons](#7-button-button)
+8. [`<datalist>` - Predefined Input Suggestions](#8-datalist-predefined-input-suggestions)
+9. [`<output>` - Display Form Calculation Results](#9-output-display-form-calculation-results)
+10. [`<iframe>` - Embedded Content](#10-iframe-embedded-content)
+11. [Summary](#-summary)
+
+ 
 
 ## 1. `<form>` (Form Tag)
 Used to **collect user input** and send it to a server.
