@@ -3,77 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Complete Form with All Input Attributes</title>
 </head>
 <body>
 
-    <h1>Registration Form</h1>
+    <h2>Complete Form Demonstrating All Input Attributes</h2>
 
-    <form action="submit.php" method="post" enctype="multipart/form-data">
-        
-        <!-- Full Name -->
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    <form action="submit.php" method="post">
+
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required minlength="5" maxlength="15" size="20" autocomplete="on">
         <br><br>
 
-        <!-- Email -->
+        <!-- Email Input -->
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <input type="email" id="email" name="email" required autocomplete="on">
         <br><br>
 
-        <!-- Password -->
+        <!-- Password Input -->
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <input type="password" id="password" name="password" required minlength="6">
         <br><br>
 
-        <!-- Phone Number -->
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        <!-- Number Input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" step="1">
         <br><br>
 
-        <!-- Gender -->
-        <label>Gender:</label>
-        <input type="radio" name="gender" value="Male" required> Male
-        <input type="radio" name="gender" value="Female" required> Female
-        <input type="radio" name="gender" value="Other" required> Other
+        <!-- URL Input -->
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" placeholder="https://example.com">
         <br><br>
 
-        <!-- Date of Birth -->
+        <!-- Date Input -->
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" name="dob" required>
+        <input type="date" id="dob" name="dob">
         <br><br>
 
-        <!-- Country (Dropdown) -->
-        <label for="country">Country:</label>
-        <select id="country" name="country" required>
-            <option value="">Select Country</option>
-            <option value="USA">USA</option>
-            <option value="India">India</option>
-            <option value="UK">UK</option>
-            <option value="Canada">Canada</option>
-        </select>
+        <!-- Time Input -->
+        <label for="appointment">Appointment Time:</label>
+        <input type="time" id="appointment" name="appointment">
         <br><br>
 
-        <!-- Address (Textarea) -->
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea>
+        <!-- Color Picker -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor">
         <br><br>
 
-        <!-- Profile Picture Upload -->
-        <label for="photo">Upload Profile Picture:</label>
-        <input type="file" id="photo" name="photo" accept="image/*">
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
         <br><br>
 
-        <!-- Agree to Terms -->
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the terms and conditions</label>
+        <!-- Interests (Checkboxes) -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interest" value="sports" checked>
+        <label for="sports">Sports</label>
+        
+        <input type="checkbox" id="music" name="interest" value="music">
+        <label for="music">Music</label>
+        
+        <input type="checkbox" id="reading" name="interest" value="reading">
+        <label for="reading">Reading</label>
         <br><br>
 
-        <!-- Submit & Reset Buttons -->
-        <input type="submit" value="Register">
+        <!-- File Upload -->
+        <label for="resume">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" multiple>
+        <br><br>
+
+        <!-- Range Slider -->
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="10">
+        <br><br>
+
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search" placeholder="Type to search...">
+        <br><br>
+
+        <!-- Telephone Input -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+        <br><br>
+
+        <!-- Hidden Input (For storing user ID, etc.) -->
+        <input type="hidden" name="userid" value="12345">
+
+        <!-- Readonly Field -->
+        <label for="readonly">Readonly Field:</label>
+        <input type="text" id="readonly" name="readonly" value="Read-Only Text" readonly>
+        <br><br>
+
+        <!-- Disabled Field -->
+        <label for="disabled">Disabled Field:</label>
+        <input type="text" id="disabled" name="disabled" value="Cannot Edit" disabled>
+        <br><br>
+
+        <!-- Pattern (Validation for Text Input) -->
+        <label for="pattern">Only Letters Allowed:</label>
+        <input type="text" id="pattern" name="pattern" pattern="[A-Za-z]+" title="Only alphabets allowed">
+        <br><br>
+
+        <!-- Autofocus -->
+        <label for="autofocus">Autofocus Field:</label>
+        <input type="text" id="autofocus" name="autofocus" autofocus>
+        <br><br>
+
+        <!-- Datalist (Predefined Options) -->
+        <label for="browsers">Choose a Browser:</label>
+        <input type="text" id="browsers" name="browsers" list="browser-list">
+        <datalist id="browser-list">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <input type="submit" value="Submit">
         <input type="reset" value="Reset">
 
     </form>
 
 </body>
 </html>
+
