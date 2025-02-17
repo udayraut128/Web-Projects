@@ -1,0 +1,90 @@
+ /* Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* ID Selector */
+        #main-heading {
+            color: red;
+            text-align: center;
+            font-size: 28px;
+            padding: 10px;
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            display: inline-block;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        /* Group Selector */
+        h1, h2, p {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Pseudo-class */
+        button:hover {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+
+        li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Pseudo-element */
+        p::first-letter {
+            font-size: 24px;
+            color: red;
+            font-weight: bold;
+        }
+
+        h1::after {
+            content: " ✅";
+            color: green;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: blue;
+        }
+
+        /* Child Selector */
+        div > p {
+            font-weight: bold;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            color: orange;
+        }
+
+        /* General Sibling Selector */
+        h1 ~ p {
+            color: purple;
+        }
